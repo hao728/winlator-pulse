@@ -58,7 +58,7 @@ jobs:
       - name: Build release APK
         run: |
           chmod +x gradlew
-          ./gradlew assembleRelease --no-daemon -PskipNative \
+          ./gradlew assembleStandardRelease --no-daemon -PskipNative \
             -Pandroid.injected.signing.store.file=$PWD/debug.keystore \
             -Pandroid.injected.signing.store.password=android \
             -Pandroid.injected.signing.key.alias=androiddebugkey \
